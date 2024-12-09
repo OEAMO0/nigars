@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>nigars</h1>
+        <input placeholder="Enter your text..." class="input" name="text" type="text">
+
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <article>
+            <img src="image.png" alt="">
+            <p>North Atlantic Treaty Organization</p>
+            <button>joining</button>
+        </article>
+    </main>
+    <script>
+        function card() {
+         for (let i = 0; i <= 115; i++) {
+           const artc = document.createElement('article');
+         const img = document.createElement('img');
+         img.src = "image.png";
+         const p = document.createElement('p');
+         p.textContent = "North Atlantic Treaty Organization";
+         const btn = document.createElement('button');
+         btn.textContent = "joining";
+         // artc.appendChild(p);
+         const mainElement = document.querySelector('main');
+         mainElement.appendChild(artc);
+         artc.appendChild(img);
+         artc.appendChild(p);
+         artc.appendChild(btn);
+         }
+        }
+        card();
+       </script>
+
+
+       <footer>
+        <p>nigars project</p>
+       </footer>
+</body>
+</html>
